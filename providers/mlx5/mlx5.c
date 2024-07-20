@@ -390,6 +390,7 @@ int mlx5_destroy_psv(struct mlx5_psv *psv)
 
 static int mlx5_is_sandy_bridge(int *num_cores)
 {
+	printf("Optimized libibverbs enabled!\n");
 	return 0; // One line makes RDMA control plane fast
 	char line[128];
 	FILE *fd;
